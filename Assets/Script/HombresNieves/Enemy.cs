@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     private float speed; //velocidad del enemigo
     public float speedBase;
     public float healt;
+
+    static public int cantidad;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,8 @@ public class Enemy : MonoBehaviour
             healt -= 10f;
             if (healt <= 0)
             {
+                cantidad++;
+                Debug.Log(cantidad);
                 Destroy(gameObject);
             }
         }

@@ -11,7 +11,7 @@ public class Level_Manager : MonoBehaviour
     public List<Plantas> plantas;
     public TextMeshProUGUI TxtSoles;
 
-    int Semillas = 50;
+    int Semillas = 500;
     int PlantaUtilizada = 0;
 
     public GameObject Semilla;

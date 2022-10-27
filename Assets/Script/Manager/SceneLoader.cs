@@ -4,9 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
-    public string nombre;
-    public void cambio()
+    public void cambio(string level)
     {
-        SceneManager.LoadScene(nombre);
+        SceneManager.LoadScene(level);
+    }
+
+    public void exit()
+    {
+        Application.Quit();
     }
 }

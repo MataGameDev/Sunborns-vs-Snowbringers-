@@ -4,9 +4,11 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 public class SpawnEnemy : MonoBehaviour
 {
-    public GameObject Nieve;
+    public GameObject[] Nieve;
+    public int[] rondas;
     public Transform spawns;
     public float coldownd;
+    private int count;
     // Start is called before the first frame update
 
 
@@ -19,24 +21,26 @@ public class SpawnEnemy : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(coldownd);
             var obstaclesSpawnPoints = new List<GameObject>();
-            foreach (Transform child in spawns)
-            {
+            foreach (Transform child in spawns) {
                 if (child.CompareTag("Spawn"))
                 {
                     obstaclesSpawnPoints.Add(child.gameObject);
                 }
             }
-
-            if (obstaclesSpawnPoints.Count > 0)
+//clear
+            for (int j = 0; j < rondas.Length; j++)
             {
-                var spawnPoint = obstaclesSpawnPoints[Random.Range(0, obstaclesSpawnPoints.Count)];
-                var spawnPos = spawnPoint.transform.position;
-                var newObstacle = Instantiate(Nieve, spawnPos, Quaternion.identity);
+                for (int i = 0; i < rondas[j]; i++)
+                {
+                    var spawnPoint = obstaclesSpawnPoints[Random.Range(0, obstaclesSpawnPoints.Count)];
+                    var spawnPos = spawnPoint.transform.position;
+                    var newObstacle = Instantiate(Nieve[count], spawnPos, Quaternion.identity);
+                    count++;
+                    yield return new WaitForSeconds(coldownd);
+                }
+                yield return new WaitForSeconds(6.0f);    
             }
-
-            coldownd = 7.0f;
         }
     }
 }
