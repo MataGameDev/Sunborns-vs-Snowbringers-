@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlantaAtaque : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PlantaAtaque : MonoBehaviour
     public Transform attackPoint;//de donde dispara el enemigo
     public GameObject[] bulletPrfab; //referencia al gameobject de la bala enemiga
     public LayerMask Nieve;
-    public int coldownd;
+    [FormerlySerializedAs("coldownd")] public int cooldowns;
     public int rango;
     // Start is called before the first frame update
     
@@ -20,7 +21,7 @@ public class PlantaAtaque : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(attackPoint.position, Vector2.right, rango, Nieve);
             if (hit.collider != null)
             {
-                yield return new WaitForSeconds(coldownd);
+                yield return new WaitForSeconds(cooldowns);
                 for (int i = 0; i < bulletPrfab.Length; i++)
                 {
                     GameObject _bullet = Instantiate(bulletPrfab[i], attackPoint.position, Quaternion.identity);

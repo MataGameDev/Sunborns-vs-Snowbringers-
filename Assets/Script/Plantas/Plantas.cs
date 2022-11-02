@@ -7,8 +7,9 @@ using UnityEngine;
 public class Plantas : MonoBehaviour
 {
     public int precio;
+    public int vida;
     public float coldownd;
-    [SerializeField] private int vida;
+
     private void OnTriggerEnter2D(Collider2D _other)
     {
         if(_other.tag == "Nieve" ){

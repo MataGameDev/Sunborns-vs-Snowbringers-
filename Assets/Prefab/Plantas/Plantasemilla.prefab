@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precio: 50
+  CoolDownToPick: 10
   vida: 20
-  coldownd: 0
 --- !u!61 &5417179152066296232
 BoxCollider2D:
   m_ObjectHideFlags: 0

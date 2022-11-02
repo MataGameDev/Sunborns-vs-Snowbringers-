@@ -141,7 +141,7 @@ MonoBehaviour:
   Nieve:
     serializedVersion: 2
     m_Bits: 64
-  coldownd: 0
+  cooldowns: 0
   rango: 13
 --- !u!114 &2689961176586397886
 MonoBehaviour:
@@ -155,9 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0df912e255f98a34ab97a4e05271e27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 250
-  coldownd: 0.6
+  precio: 400
   vida: 10
+  coldownd: 0
 --- !u!61 &9165472459104533730
 BoxCollider2D:
   m_ObjectHideFlags: 0
