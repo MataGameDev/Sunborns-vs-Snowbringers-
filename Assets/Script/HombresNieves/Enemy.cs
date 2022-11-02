@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public float healt;
 
     static public int cantidad;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +43,33 @@ public class Enemy : MonoBehaviour
             if (healt <= 0)
             {
                 cantidad++;
-                Debug.Log(cantidad);
+                Destroy(gameObject);
+            }
+        }
+        if (_other.tag == "BalaSolar")
+        {
+            healt -= 20f;
+            if (healt <= 0)
+            {
+                cantidad++;
+                Destroy(gameObject);
+            }
+        }
+        
+        if (_other.tag == "Fuego")
+        {
+                cantidad++;
+                Destroy(gameObject);
+
+        }
+        
+        if (_other.tag == "BalaStun")
+        {
+            healt -= 10f;
+            speed = speedBase/2;
+            if (healt <= 0)
+            {
+                cantidad++;
                 Destroy(gameObject);
             }
         }

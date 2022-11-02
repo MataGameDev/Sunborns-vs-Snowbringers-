@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 public class SpawnEnemy : MonoBehaviour
 {
-    public GameObject[] Nieve;
+    public GameObject[] Nieves;
     public int[] rondas;
-    public Transform spawns;
+    public Transform[] spawns;
     public float coldownd;
     private int count;
+    private int waveCount = 0;
+    private int enemyCount;
     // Start is called before the first frame update
 
 
@@ -19,28 +22,23 @@ public class SpawnEnemy : MonoBehaviour
     }
     private IEnumerator Start ()
     {
+        yield return new WaitForSeconds(1.0f);    
         while (true)
         {
-            var obstaclesSpawnPoints = new List<GameObject>();
-            foreach (Transform child in spawns) {
-                if (child.CompareTag("Spawn"))
-                {
-                    obstaclesSpawnPoints.Add(child.gameObject);
-                }
-            }
-//clear
-            for (int j = 0; j < rondas.Length; j++)
+            enemyCount = GameObject.FindGameObjectsWithTag("Nieve").Length;
+
+            if (enemyCount == 0)
             {
-                for (int i = 0; i < rondas[j]; i++)
+                for (int i = 0; i < rondas[waveCount]; i++)
                 {
-                    var spawnPoint = obstaclesSpawnPoints[Random.Range(0, obstaclesSpawnPoints.Count)];
-                    var spawnPos = spawnPoint.transform.position;
-                    var newObstacle = Instantiate(Nieve[count], spawnPos, Quaternion.identity);
+                    Instantiate(Nieves[count], spawns[Random.Range(0, 5)].position, Quaternion.identity);
                     count++;
+                    coldownd -= 0.05f;
                     yield return new WaitForSeconds(coldownd);
                 }
-                yield return new WaitForSeconds(6.0f);    
+                waveCount++;
             }
+            yield return new WaitForSeconds(1.0f);
         }
     }
 }
