@@ -634,7 +634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &246935961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,7 +1298,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.9258541, y: 0.8401111}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.86065674, y: 0.2689972}
+  m_AnchoredPosition: {x: -0.86065674, y: 0.26898193}
   m_SizeDelta: {x: -0.27880096, y: 0.26210022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &558678430
@@ -5045,7 +5045,7 @@ MonoBehaviour:
   Semilla: {fileID: 4058889189888306361, guid: bf28ef972880889439a1c0d2dc5ad46c, type: 3}
   boton: {fileID: 1535589784}
   TxtSoles: {fileID: 907523998}
-  Semillas: 5000
+  Semillas: 8000
 --- !u!4 &1957720591
 Transform:
   m_ObjectHideFlags: 0

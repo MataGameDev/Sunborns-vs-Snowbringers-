@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -66,8 +65,11 @@ public class Level_Manager : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Casilla"))
                 {
-                    Transform t = hit.collider.transform;
-                    CrearPlanta(PlantaUtilizada, t);
+                    if (PlantaUtilizada != 12)
+                    {
+                        Transform t = hit.collider.transform;
+                        CrearPlanta(PlantaUtilizada, t);
+                    }
                 }
                 else if (hit.collider.CompareTag("Planta") )
                 {
@@ -103,12 +105,14 @@ public class Level_Manager : MonoBehaviour
     {
         pala = true;
         fertilizante = false;
+        PlantaUtilizada = 12;
     }
 
     public void activarFertilizante()
     {
         fertilizante = true;
         pala = false;
+        PlantaUtilizada = 12;
     }
     private void CrearPlanta(int numero, Transform t)
     {
@@ -116,8 +120,6 @@ public class Level_Manager : MonoBehaviour
             return; //SI tienes menos semillas que el precio de la planta no la puedes poner 
         if (t.childCount != 0)
             return; //Si la casilla esta ocupada no puedes poner otra planta asi
-        if (PlantaUtilizada == 12)
-            return;
         GameObject g = Instantiate(plantas[PlantaUtilizada].gameObject, t.position, gameObject.transform.rotation) as GameObject;
         g.transform.SetParent(t);
         PlantaUtilizada = 12;
