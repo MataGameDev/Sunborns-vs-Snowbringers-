@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,5 +13,6 @@ public class DeleteData : MonoBehaviour
         {
             data.levelsCompleted[i] = false;
         }
+
     }
 }

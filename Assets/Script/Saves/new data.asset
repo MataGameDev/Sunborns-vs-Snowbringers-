@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 553e7c925957bb147a6c75363c63c1ae, type: 3}
   m_Name: new data
   m_EditorClassIdentifier: 
-  levelsCompleted: 000000000000000000
+  levelsCompleted: 010101010101010101

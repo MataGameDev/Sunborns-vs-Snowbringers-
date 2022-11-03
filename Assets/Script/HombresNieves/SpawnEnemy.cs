@@ -22,6 +22,7 @@ public class SpawnEnemy : MonoBehaviour
     }
     private IEnumerator Start ()
     {
+        Enemy.cantidad = 0;
         yield return new WaitForSeconds(5.0f);    
         while (true)
         {

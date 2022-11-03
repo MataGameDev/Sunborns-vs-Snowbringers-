@@ -5,4 +5,5 @@ using UnityEngine;
 public class Data : ScriptableObject
 {
     public List<bool> levelsCompleted;
+    
 }

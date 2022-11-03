@@ -14,6 +14,7 @@ TagManager:
   - BalaStun
   - CrioExplosion
   - BalaSolar
+  - dato
   layers:
   - Default
   - TransparentFX
