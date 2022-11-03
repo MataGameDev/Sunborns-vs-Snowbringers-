@@ -138,7 +138,7 @@ MonoBehaviour:
   Nieve:
     serializedVersion: 2
     m_Bits: 64
-  cooldowns: 1
+  cooldowns: 0.75
   rango: 13
 --- !u!114 &1697796678773797260
 MonoBehaviour:
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   precio: 100
   vida: 30
-  coldownd: 1
+  coldownd: 4
 --- !u!61 &-3609304415989832240
 BoxCollider2D:
   m_ObjectHideFlags: 0

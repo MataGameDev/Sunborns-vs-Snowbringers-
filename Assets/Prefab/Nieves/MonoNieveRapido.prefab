@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedBase: 1
-  healt: 30
+  healt: 50
 --- !u!70 &9012453504529787814
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

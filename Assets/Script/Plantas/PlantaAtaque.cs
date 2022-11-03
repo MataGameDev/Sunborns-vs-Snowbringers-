@@ -9,7 +9,7 @@ public class PlantaAtaque : MonoBehaviour
     public Transform attackPoint;//de donde dispara el enemigo
     public GameObject[] bulletPrfab; //referencia al gameobject de la bala enemiga
     public LayerMask Nieve;
-    [FormerlySerializedAs("coldownd")] public int cooldowns;
+    [FormerlySerializedAs("coldownd")] public float cooldowns;
     public int rango;
     // Start is called before the first frame update
     

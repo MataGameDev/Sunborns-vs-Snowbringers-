@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlantaSemillas : MonoBehaviour
 {
-    public float coldownd;
-    private float coldownBase = 0.5f;
+    public float CoolDown;
+    private float CoolDownBase = 0.5f;
     public Transform spawnPoint;//de donde dispara el enemigo
     public GameObject Semilla; //referencia al gameobject de la bala enemiga
     // Start is called before the first frame update
@@ -14,11 +14,10 @@ public class PlantaSemillas : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(coldownBase);
+            yield return new WaitForSeconds(CoolDownBase);
             
             GameObject _Semilla = Instantiate(Semilla, spawnPoint.position, Quaternion.identity);
-            coldownd += 0.5f;
-            coldownBase = coldownd;
+            CoolDownBase = CoolDown;
 
         }
     }

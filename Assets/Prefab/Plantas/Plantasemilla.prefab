@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 6812525471539134628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.8893714, y: -0.9859519, z: -6.836113}
-  m_LocalScale: {x: 1.6, y: 1.6, z: 1}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7982687676532091477}
@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precio: 50
-  CoolDownToPick: 10
   vida: 20
+  coldownd: 3
 --- !u!61 &5417179152066296232
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -172,6 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc2ccbd2a9f90f4cba13027caf2e064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coldownd: 5.5
+  CoolDown: 9
   spawnPoint: {fileID: 7982687676532091477}
   Semilla: {fileID: 4058889189888306361, guid: bf28ef972880889439a1c0d2dc5ad46c, type: 3}

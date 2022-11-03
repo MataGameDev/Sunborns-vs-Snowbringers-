@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68840f0d4c7b7854fa794d41301f751b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedBase: 0.6
-  healt: 50
+  speedBase: 0.4
+  healt: 150
 --- !u!70 &3531626198024639291
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
