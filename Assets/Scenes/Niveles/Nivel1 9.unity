@@ -2210,7 +2210,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 10
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &932581694
@@ -3510,7 +3510,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: combate
+          m_StringArgument: Nivel1 9
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1244265596
@@ -5019,7 +5019,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 1048990016}
-  bloqueo: {fileID: 1560310334}
+  bloqueo: {fileID: 1473352668}
+  enemysLevel: 56
+  levelID: 8
+  data: {fileID: 11400000, guid: 1d6af96dba7e4bd438bce1477aaf1fc0, type: 2}
 --- !u!224 &1971636992 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2257370862484474307, guid: 930aee2d38bf1074788d2fae86036774, type: 3}

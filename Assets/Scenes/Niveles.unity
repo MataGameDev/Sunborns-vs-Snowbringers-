@@ -215,7 +215,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 5
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2473106
@@ -527,7 +527,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &214444217
@@ -660,7 +660,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &279621923
@@ -793,7 +793,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &473471759
@@ -926,7 +926,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 10
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &543932017
@@ -1059,7 +1059,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 7
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &690432256
@@ -1352,7 +1352,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 8
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &972340916
@@ -1542,7 +1542,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 9
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1262747155
@@ -1675,7 +1675,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1268126712
@@ -1808,7 +1808,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1422027644
@@ -1904,6 +1904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761701474}
   - component: {fileID: 1761701473}
+  - component: {fileID: 1761701475}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -1938,6 +1939,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1761701475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761701472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7330114010c64c04ababf403634e9188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 1268126709}
+  - {fileID: 214444214}
+  - {fileID: 473471756}
+  - {fileID: 2473103}
+  - {fileID: 1422027641}
+  - {fileID: 690432253}
+  - {fileID: 972340913}
+  - {fileID: 1262747152}
+  - {fileID: 543932014}
+  data: {fileID: 11400000, guid: 1d6af96dba7e4bd438bce1477aaf1fc0, type: 2}
 --- !u!1 &1810571011
 GameObject:
   m_ObjectHideFlags: 0

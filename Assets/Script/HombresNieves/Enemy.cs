@@ -9,12 +9,14 @@ public class Enemy : MonoBehaviour
     private float speed; //velocidad del enemigo
     public float speedBase;
     public float healt;
+    private Victoria victoria;
 
-    static public int cantidad;
+    public static int cantidad;
     
     // Start is called before the first frame update
     void Start()
     {
+        victoria = (Victoria)FindObjectOfType(typeof(Victoria));
         speed = speedBase;
     }
 
@@ -43,7 +45,9 @@ public class Enemy : MonoBehaviour
             if (healt <= 0)
             {
                 cantidad++;
+                victoria.Ganar(cantidad);
                 Destroy(gameObject);
+                
             }
         }
         if (_other.tag == "BalaSolar")
@@ -52,13 +56,16 @@ public class Enemy : MonoBehaviour
             if (healt <= 0)
             {
                 cantidad++;
+                victoria.Ganar(cantidad);
                 Destroy(gameObject);
+                
             }
         }
         
         if (_other.tag == "Fuego")
         {
                 cantidad++;
+                victoria.Ganar(cantidad);
                 Destroy(gameObject);
 
         }
@@ -70,6 +77,7 @@ public class Enemy : MonoBehaviour
             if (healt <= 0)
             {
                 cantidad++;
+                victoria.Ganar(cantidad);
                 Destroy(gameObject);
             }
         }

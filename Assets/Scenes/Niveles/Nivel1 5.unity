@@ -497,7 +497,7 @@ MonoBehaviour:
   - {fileID: 2127836568938652814, guid: 098dfc617d168c840afde78ee525832e, type: 3}
   - {fileID: 1388730956496489974, guid: 5db6a46e5ecbeaa44bf0235f2da58e42, type: 3}
   - {fileID: 1388730956496489974, guid: 5db6a46e5ecbeaa44bf0235f2da58e42, type: 3}
-  rondas: 04000000060000000a000000030000000300000001000000
+  rondas: 04000000060000000a000000030000000300000004000000
   spawns:
   - {fileID: 788310396}
   - {fileID: 1170258437}
@@ -1636,7 +1636,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 6
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &932581694
@@ -2801,7 +2801,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: combate
+          m_StringArgument: Nivel1 5
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1244265596
@@ -4237,7 +4237,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 1048990016}
-  bloqueo: {fileID: 1560310334}
+  bloqueo: {fileID: 1473352668}
+  enemysLevel: 30
+  levelID: 4
+  data: {fileID: 11400000, guid: 1d6af96dba7e4bd438bce1477aaf1fc0, type: 2}
 --- !u!1001 &1823325327698267898
 PrefabInstance:
   m_ObjectHideFlags: 0

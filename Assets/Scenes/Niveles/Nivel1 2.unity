@@ -299,7 +299,7 @@ MonoBehaviour:
   - {fileID: 2127836568938652814, guid: 098dfc617d168c840afde78ee525832e, type: 3}
   - {fileID: 2127836568938652814, guid: 098dfc617d168c840afde78ee525832e, type: 3}
   - {fileID: 1388730956496489974, guid: 5db6a46e5ecbeaa44bf0235f2da58e42, type: 3}
-  rondas: 020000000400000002000000
+  rondas: 02000000040000000200000002000000
   spawns:
   - {fileID: 788310396}
   - {fileID: 1170258437}
@@ -1348,7 +1348,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Combate
+          m_StringArgument: Nivel1 3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &932581694
@@ -2513,7 +2513,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: combate
+          m_StringArgument: Nivel1 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1244265596
@@ -3693,13 +3693,6 @@ MonoBehaviour:
   plantas:
   - {fileID: 1697796678773797260, guid: 78682bee7811bf14396405ed22cec0ea, type: 3}
   - {fileID: 1246171536429886964, guid: 33d4788a612898c40a7d3534b4e87b2e, type: 3}
-  - {fileID: 4593190416835279462, guid: 7069db288df4ffa4c8d6d50b9140a130, type: 3}
-  - {fileID: 2768625201580529560, guid: 468142bc4ad0c074e83b8d2f6d4e905b, type: 3}
-  - {fileID: 7895924164354086750, guid: 49c484bb5c60c674fa8ae469487a7966, type: 3}
-  - {fileID: 5013492872764389193, guid: aa010e91afa6804469b351d98f87c0f2, type: 3}
-  - {fileID: 134438799129413491, guid: 43d71762d038c474ba545e33d13ddcc8, type: 3}
-  - {fileID: 2689961176586397886, guid: 436ecf89055bb794c9d41fc677e21470, type: 3}
-  - {fileID: 3816370047842947689, guid: df4e27059dc4e50479ed73e12c19d2f6, type: 3}
   plantaSol: {fileID: 8599267688012417340, guid: 920d764b9668b8e4d8c2fc8f6d8d8d2a, type: 3}
   Semilla: {fileID: 4058889189888306361, guid: bf28ef972880889439a1c0d2dc5ad46c, type: 3}
   boton: {fileID: 1535589784}
@@ -3759,7 +3752,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 1048990016}
-  bloqueo: {fileID: 1560310334}
+  bloqueo: {fileID: 1473352668}
+  enemysLevel: 10
+  levelID: 1
+  data: {fileID: 11400000, guid: 1d6af96dba7e4bd438bce1477aaf1fc0, type: 2}
 --- !u!1001 &1823325327698267898
 PrefabInstance:
   m_ObjectHideFlags: 0
