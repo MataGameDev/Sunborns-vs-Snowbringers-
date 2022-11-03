@@ -30,30 +30,13 @@ public class Level_Manager : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(10.0f);
+            yield return new WaitForSeconds(7.5f);
             //Spawneo de semillas cada 10 segundos
             GameObject _Semilla = Instantiate(Semilla, 
                 new Vector3(Random.Range(-7, 7),Random.Range(-4, 2.3f),-0.1f), 
                 Quaternion.identity);
             
         }
-        //Codigo que me robe que no funciono
-        /*
-        for (int i = 0; i < plantasAUsar.Count; i++)
-        {
-            GameObject go = Instantiate(PrefabCarta) as GameObject;
-            go.transform.SetParent(Deck.transform);
-            go.transform.position = Vector3.zero;
-            go.transform.localScale = Vector3.one;
-
-            Image img = go.GetComponent<Image>();
-            img.sprite = plantasAUsar[i].cartaAsignada;
-
-            Button bot = go.GetComponent<Button>();
-            bot.onClick.RemoveAllListeners();
-            int u = i;
-            bot.onClick.AddListener(() => { PlantaAusar = u; });
-        } */
     }
 
     void Update()
@@ -66,8 +49,11 @@ public class Level_Manager : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Casilla"))
                 {
-                    Transform t = hit.collider.transform;
-                    CrearPlanta(PlantaUtilizada, t);
+                    if (PlantaUtilizada != 12)
+                    {
+                        Transform t = hit.collider.transform;
+                        CrearPlanta(PlantaUtilizada, t);
+                    }
                 }
                 else if (hit.collider.CompareTag("Planta") )
                 {

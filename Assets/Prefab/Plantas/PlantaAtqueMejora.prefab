@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2473123309319928334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.33, y: -4.2694454, z: 0}
-  m_LocalScale: {x: 1.6, y: 1.6, z: 1}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1301693658398052607}
@@ -107,7 +107,7 @@ MonoBehaviour:
   Nieve:
     serializedVersion: 2
     m_Bits: 64
-  cooldowns: 1
+  cooldowns: 0.3
   rango: 13
 --- !u!114 &7895924164354086750
 MonoBehaviour:
@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precio: 200
-  vida: 20
-  coldownd: 2
+  vida: 50
+  coldownd: 10
 --- !u!61 &4032147618190885634
 BoxCollider2D:
   m_ObjectHideFlags: 0

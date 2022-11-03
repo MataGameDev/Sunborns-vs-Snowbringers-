@@ -22,7 +22,7 @@ public class SpawnEnemy : MonoBehaviour
     }
     private IEnumerator Start ()
     {
-        yield return new WaitForSeconds(1.0f);    
+        yield return new WaitForSeconds(5.0f);    
         while (true)
         {
             enemyCount = GameObject.FindGameObjectsWithTag("Nieve").Length;
