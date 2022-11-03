@@ -799,6 +799,18 @@ MonoBehaviour:
           m_StringArgument: inicio
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1738908695}
+        m_TargetAssemblyTypeName: VolumenSaveController, Assembly-CSharp
+        m_MethodName: saveValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &883032812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,6 +1356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738908693}
   - component: {fileID: 1738908694}
+  - component: {fileID: 1738908695}
   m_Layer: 5
   m_Name: VolumenControl
   m_TagString: Untagged
@@ -1418,13 +1431,39 @@ MonoBehaviour:
   m_FillRect: {fileID: 120364257}
   m_HandleRect: {fileID: 884464152}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.593
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738908695}
+        m_TargetAssemblyTypeName: VolumenSaveController, Assembly-CSharp
+        m_MethodName: volumenSlider
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1738908695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738908692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86da1d6578acd3a48b526325427e6b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixeador: {fileID: 24100000, guid: 6a575b02a17b27b419a0f9c9f2a709f3, type: 2}
+  mainSlider: {fileID: 1738908694}
 --- !u!1 &1871694102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,6 +1543,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871694102}
   m_CullTransparentMesh: 1
+--- !u!1001 &1875797201
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7094867
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005069, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035201842618005071, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
+      propertyPath: m_Name
+      value: Musica
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3767b5c53a5d88945be3e82e7e5b88e6, type: 3}
 --- !u!1 &1986067850
 GameObject:
   m_ObjectHideFlags: 0
